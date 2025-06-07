@@ -16,3 +16,15 @@ This script defines a Python function that automates the process of extracting P
 - Map the POS tag to WordNet format for downstream tasks like lemmatization.
 
 - Simplify integration with WordNet lemmatizer by converting POS into: wordnet.NOUN, wordnet.VERB, wordnet.ADJ, wordnet.ADV
+
+### Lemmaization - POS
+
+This script demonstrates how to perform **lemmatization** using NLTK’s `WordNetLemmatizer`. Lemmatization is a key step in NLP where words are reduced to their **base or dictionary form**, taking into account the **context** such as the part of speech (POS). This makes it more powerful and accurate than stemming.
+
+- Perform lemmatization on individual words
+  
+- Apply lemmatization on a list of words (batch processing)
+  
+- Lemmatize full sentences after tokenization
+  
+- Highlight the effect of different POS tags on lemmatization output
