@@ -15,12 +15,4 @@ This script defines a Python function that automates the process of extracting P
 
 - Map the POS tag to WordNet format for downstream tasks like lemmatization.
 
-- Simplify integration with WordNet lemmatizer by converting POS into:
-
-- wordnet.NOUN
-
-- wordnet.VERB
-
-- wordnet.ADJ
-
-- wordnet.ADV
+- Simplify integration with WordNet lemmatizer by converting POS into: wordnet.NOUN, wordnet.VERB, wordnet.ADJ, wordnet.ADV
