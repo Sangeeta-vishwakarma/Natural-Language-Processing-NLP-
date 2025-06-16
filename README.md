@@ -54,7 +54,7 @@ Transformed text into Bag of Words (BoW) using CountVectorizer (max 1500 feature
 - Organize preprocessing as functions or classes for maintainability.
 
 
-This demonstrates basic Natural Language Processing (NLP) techniques using the NLTK (Natural Language Toolkit) library. It focuses on NLP Preprocessing Techniques which are:
+Below Jupyter notebook demonstrates basic Natural Language Processing (NLP) techniques using the NLTK (Natural Language Toolkit) library. It focuses on NLP Preprocessing Techniques which are:
 ## 1. Customize Remove - Tokenize
 
 - Word tokenization
