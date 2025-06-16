@@ -1,4 +1,59 @@
 # Natural-Language-Processing-NLP-
+
+## Natural Language Processing for Sentiment Analysis( Restaurant Reviews )
+## Project Overview
+This file includes Restaurant reviews dataset and it's code file which executed in jupyter notebook. This notebook demonstrates a classic Natural Language Processing (NLP) pipeline using the Restaurant Reviews Dataset. The goal is to classify customer reviews as positive or negative based on textual sentiment.
+
+### Dataset
+- Name: Restaurant_Reviews.tsv
+- Format: Tab-separated values (TSV)
+- Columns:
+  - Review: Text of the customer review  
+  - Liked: Binary sentiment label (1 = liked, 0 = disliked)
+
+### Approach
+### (i). Text Preprocessing
+- Cleaned text using regex to remove non-alphabetic characters.
+- Converted to lowercase.
+- Tokenized and removed stopwords (but retained "not").
+- Applied Stemming using PorterStemmer.
+- Built a corpus of cleaned reviews.
+
+### (ii). Feature Extraction
+Transformed text into Bag of Words (BoW) using CountVectorizer (max 1500 features).
+
+### (iii). Model Training
+- Split data into training and testing sets.
+- Used Naive Bayes Classifier (GaussianNB) for binary classification.
+- Evaluated using confusion matrix and accuracy score.
+
+### Results
+- Accuracy: ~73% (approx, inferred from typical use of this approach).
+- Confusion Matrix and classification metrics were used to assess performance.
+
+### Why This Approach?
+- Bag of Words is simple yet effective for small/medium datasets.
+- Naive Bayes is computationally efficient and performs well in text classification.
+- Stemming and selective stopword removal preserve sentiment polarity (e.g., retaining “not” improves context understanding).
+
+### How Could It Be Better?
+### 1. Use Lemmatization Instead of Stemming
+- Stemming may distort words (e.g., "loved" → "love", but also "worst" → "wor").
+- Lemmatization (e.g., with WordNetLemmatizer) is more accurate linguistically.
+
+### 2. Switch to TF-IDF
+- CountVectorizer doesn’t consider term importance.
+- TfidfVectorizer weighs rare but meaningful words better.
+
+### 3. Model Improvements
+- Try Logistic Regression, SVM, or Ensemble Methods like Random Forests or XGBoost for improved accuracy.
+- Consider cross-validation for more robust model evaluation.
+
+### 4. Pipeline and Modular Code
+- Use sklearn.pipeline.Pipeline for streamlined preprocessing and model training.
+- Organize preprocessing as functions or classes for maintainability.
+
+
 This demonstrates basic Natural Language Processing (NLP) techniques using the NLTK (Natural Language Toolkit) library. It focuses on NLP Preprocessing Techniques which are:
 ## 1. Customize Remove - Tokenize
 
